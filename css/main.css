@@ -304,7 +304,7 @@ body{
     justify-content: space-around;
     margin: 4pc 0;
 }
-.section5 > div:nth-child(2) > div{
+.section5 > div:nth-child(2) > div:not(:nth-child(3)){
     box-shadow: 0px 0px 40px -25px;
     height: 300px;
     padding: 10px;
@@ -380,6 +380,37 @@ body{
 .section5 > div:last-child a > span i{
     font-size: 1.1rem;
 }
+.section5 > div:nth-child(2) > div:nth-child(3){
+    box-shadow: 0px 0px 40px -25px;
+    height: 300px;
+    padding: 0;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+.section5 > .row > .row > i{
+    width: auto;
+    background: var(--white);
+    position: absolute;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    padding: 1.4rem 0.6rem;
+    top: -6%;
+    right: 5%;
+    box-shadow: 0 0 25px -16px;
+}
+.section5 > .row > .row > div:nth-child(2) {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: .7 0 auto;
+}
+.section5 > .row > .row [class="col-md-12"] h3{
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--white);
+}
 
 
 
@@ -397,11 +428,17 @@ body{
     .section1 > .row{
         justify-content: center;
     } 
+    .section1 .row h2 {
+        line-height: .6pc;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-top: 1pc;
+    }
     .section1 > .row > div:first-child{
         text-align:center;
     } 
-    .section1 > .row > div{
-        margin: 15px 0 !important;
+    .section1 > .row > div {
+        margin: 3pc 0 0 0;
         position: unset;
     }
     .section1 a {
@@ -409,6 +446,12 @@ body{
     }
     .section1 > .row > div:last-child{
         margin: 0 !important;
+        text-align: center;
+    }
+    .section2 .container {
+        padding: 3pc 0;
+    }
+    .section2 .container .well > div:last-child {
         text-align: center;
     }
     .section2 > .container > .well, .section4 > .row{
@@ -419,6 +462,9 @@ body{
     }
     .section2 > .row:nth-child(1) > div {
         margin: 1pc;
+    }
+    .section2 .container .well > div:last-child ul{
+        padding: 0;
     }
 
 
@@ -459,11 +505,19 @@ body{
 /* mobile screen size */
 @media (min-width: 320px) and (max-width: 575.98px){
     .section1 {
-        margin-bottom: .5pc;
+        margin-bottom: 0.5pc;
+        padding-top: 3pc;
     }
     .section1 .row > div{
         text-align: center;
         margin: 0 auto;
+    }
+    .section1 .row h2 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .section1 a {
+        margin-top: 2.5pc;
     }
     .section1 a > div h5 {
         font-size: 12px;
@@ -474,12 +528,15 @@ body{
 
 
 
+    .section2 .container {
+        padding: 3pc 0;
+    }
     .section2 > .row > div{
-        margin: 10px auto !important;
+        margin: 1.2pc auto !important;
         position: unset;
     }
     .section2 > .row:nth-child(1) > div > div:nth-child(2) p {
-        font-size: .8rem;
+        font-size: 12px;
         margin-top: .4pc;
     }
     .section2 > .row:nth-child(1) > div > div:nth-child(2) h5 {
@@ -488,7 +545,7 @@ body{
     }
     .section2 > .row > div:nth-child(1) > div > [class="icon-compass"] {
         font-size: 1rem;
-        padding: 1px 3px 1px 2px;
+        padding: 1px 2px 1px 2px;
     }
     .section2 > .row:nth-child(1) > div:not(:first-child) > div:nth-child(1) {
         font-size: 1.3rem;
@@ -498,7 +555,7 @@ body{
         padding: 0;
     }
     .section2 .container .well > div:last-child {
-        margin-top: 1.4pc;
+        margin-top: 3pc;
     }
     .section2 .container .well > div:last-child h2 {
         margin-top: 1.3pc;
@@ -506,6 +563,7 @@ body{
     }
     .section2 .container .well > div:last-child a{
         font-size: 12px;
+        margin-top:4pc;
     }
     .section2 .container .well > div:last-child ul li, .section2 .container .well > div:last-child a > div h5 {
         font-size: 12px;
@@ -514,14 +572,55 @@ body{
         padding: 0;    
     }
     .section3 {
-        padding: 1pc 0;
+        padding: 3pc 0;
     }
-
+    .section3 > div h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .section3 .row {
+        justify-content: space-evenly;
+        margin: 0 !important;
+    }
+    .section3 .row > div {
+        margin: 0.8pc 0;
+    }
+    .section3 .row > div > div:nth-child(2) h4 {
+        font-size: 15px;
+    }
+    .section3 .row > div > div:nth-child(2) p {
+        font-size: 12px;
+    }
+    .section4 {
+        padding: 5pc 0 3pc 0;
+    }
+    .section4 > .row > div > a {
+        margin-top: 4pc;
+    }
+    .section4 > .row > div > h5 {
+        color: #eee;
+    }
+    .section4 > .row > div > a > div h5{
+        white-space: nowrap;
+        font-size: 12px;
+        font-weight: normal;
+    }
     .section4 > .row > div > h2 {
         font-size: .8rem;
         line-height: 1.3pc;
         font-weight: bolder;
         margin-top: 1pc;
+    }
+    .section4 > .row > div:nth-child(2){
+        padding-top: 3pc;
+    }
+    .section4 .row > div:nth-child(2) > div:not([class="col-2"]) {
+        margin-top: 1pc;
+    }
+    .section4 .row > div:nth-child(2) > div span {
+        display: block;
+        line-height: 1.2pc;
+        font-size: 12px;
     }
     .section4 > .row > div > p {
         font-size: 12px;
