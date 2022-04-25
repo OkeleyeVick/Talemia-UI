@@ -362,7 +362,7 @@ body{
     display: flex;
     background-color: var(--blue);
     color: var(--white);
-    align-items: stretch;
+    align-items: center;
     font-size: 14px;
     padding: 0.8rem 3.5rem;
     text-transform: capitalize;
@@ -448,11 +448,25 @@ body{
         margin: 0 !important;
         text-align: center;
     }
+    .section2 > .row > div > div:nth-child(2){
+        margin-top: 2pc;
+    }
+    .section2 > .row > div > div:nth-child(2) h5{
+        font-weight: 600;
+        letter-spacing: .3px;
+    }
     .section2 .container {
         padding: 3pc 0;
     }
+    .section2 .container .well > div:first-child {
+        margin-top: 1pc;
+    }
     .section2 .container .well > div:last-child {
         text-align: center;
+        margin: 2pc 0 2pc;
+    }
+    .section2 .container .well > div:last-child a {
+        margin-top: 3pc;
     }
     .section2 > .container > .well, .section4 > .row{
         flex-direction: column-reverse;
@@ -474,6 +488,28 @@ body{
         justify-content: space-between;
         padding: 0;
     }
+    .section3 > div h3{
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+    .section4 > .row .image {
+        margin-top: 4pc;
+    }
+    .section4 > .row > [class="col-12 col-lg-6"]{
+        text-align: center;
+    }
+    .section4 > .row > div > h5 {
+        color: #f8f9fa;
+        font-size: 14px;
+    }
+    .section4 .row > div:nth-child(2) > div span {
+        line-height: 1.7pc;
+    }
+    .section4 > .row > div > a {
+        margin-top: 2.5pc;
+        justify-content: center;
+    }
+    
 
     .section5 > div:nth-child(2) > div .header h5 {
         font-size: 15px;
@@ -644,9 +680,9 @@ body{
     .section5 > div:nth-child(2) > div .footer > div:first-child h6, .section5 > div:nth-child(2) > div .footer > div:nth-child(2) li * {
         font-size: 12px;
     }
-    .section5 > div:last-child a{
-        align-items: center;
-        padding: 0.6rem 0.3rem;
+    .section5 > div:last-child a {
+        padding: 0.8rem 0.3rem;
+        margin-bottom: 1.5pc;
     }
     .section5 > div:last-child a h6 {
         font-size: 12px;
