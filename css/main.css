@@ -1,39 +1,4 @@
-@font-face {
-    font-family:OpenSans;
-    src:url('../css/OpenSans-Regular.ttf');
-}
-:root{
-    --blue: #09099d;
-    --smokewhite: rgba(247,248,253);
-    --lightdark: #2d2a38;
-    --fontcolor: #7b8397;
-    --white: #fff;
-    --black: #151221;
-    --font1: 'Poppins', OpenSans;
-}
-*{
-    padding: 0;
-    margin: 0;
-    font-family: var(--font1);
-}
-* i{
-    font-weight: normal;
-}
-a{
-    text-decoration: none !important;
-}
-h1, h2, h3, h4, h5, h6, p{
-    font-weight: normal;
-    margin: unset;
-}
-ul, li{
-    list-style-type: none;
-    list-style: none;
-    margin: unset;
-}
-body{
-    position: relative;
-}
+
 
 /* navbar styles */
 .header > .row {
@@ -182,9 +147,6 @@ body{
 .section2 .container .well > div:last-child a h5{
     white-space: nowrap;
     font-size: 13px;
-}
-.section2 .container .well > div:last-child a > div:nth-child(2){
-        /* display: none; */
 }
 .section2 .container .well > div:last-child a:hover > div:nth-child(2){
         display: block;
